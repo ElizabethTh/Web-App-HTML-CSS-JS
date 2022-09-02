@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+ 
+  <head>
+    <meta
+      name="keywords"
+      content="homemade food, Food delivery app, freshly homemade food"
+    />
+    <meta name="description" content="Fresh Homely Food With Love And Care" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="product.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="./../../images/soulfood-icon.png" />
+    <title>SoulFood</title>
+    <script src="product.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  </head>
+
+  <body>
+    <!--  header section with login options  -->
+    <section id="main-page-content">
+      <section class="logo-menus-container">
+        <section>
+          <a href="./../../index.html">HOME</a>
+        </section>
+        <section>
+          <img src="./../../images/soulfood-logo.png" />
+        </section>
+        <section class="cart-icon">
+          <img src="./../../images/icons/shopping-cart.png" />
+          <a href="#">(0)</a>
+        </section>
+      </section>
+
+      <section>
+        <button class="btn">
+          <a href="../product-signin/product-signin.html">SignIn</a>
+        </button>
+        <button class="btn">
+          <a href="../product-signup/product-signup.html">SignUp</a>
+        </button>
+      </section>
+
+      <section class="search-bar-container">
+        <section class="search-bar">
+          <input
+            class="search-input"
+            type="text"
+            placeholder="Kitchener,Ontario"
+          />
+        </section>
+        <section class="search-bar">
+          <input
+            class="search-input"
+            type="text"
+            placeholder="Search food...."
+          />
+        </section>
+      </section>
+    </section>
+
+    <!-- categories section  -->
+    <section class="categories-section">
+      <img src="./../../images/banner/south-indian.jpg" alt="category image1" />
+      <img src="./../../images/banner/north-indian.jpg" alt="category image2" />
+      <img src="./../../images/banner/spanish.jpg" alt="category image3" />
+      <img src="./../../images/banner/italian.jpg" alt="category image4" />
+      <img src="./../../images/banner/japanese.jpg" alt="category image5" />
+      <img src="./../../images/banner/korean.jpg" alt="category image6" />
+      <img src="./../../images/banner/nigerian.jpg" alt="category image7" />
+      <img src="./../../images/banner/arabic.jpg" alt="category image8" />
+    </section>
+
+    <!-- categories section: widgets showing different categories of food. -->
+    <section id="products-section">
+      <section class="dropdown">
+        <section class="filter-container">
+          <img
+            src="./../../images/icons/filter.png"
+            onclick="filterDropDownFunction()"
+          />
+          <h3 class="filter-text-style">Filter</h3>
+        </section>
+
+        <section id="filterDropDown" class="dropdown-content">
+          <section class="filter-section">
+            <section class="close-button clear-section">
+              <a href="#">Clear All</a>
+              <button id="close" onclick="filterDropDownFunction()">
+                &times;
+              </button>
+            </section>
+            <h1>80 Stores</h1>
+            <!-- <a href="#">Clear All</a> -->
+            <section class="sort-section">
+              <!-- services section: fiter checkbox to select services -->
+              <h3>Services</h3>
+              <label class="container">
+                Instant
+                <input type="checkbox" checked="checked" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">
+                Weekly
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">
+                Monthly
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+            </section>
+            <section class="sort-section">
+              <!-- services section: fiter checkbox sort product preferences -->
+              <h3>Sort</h3>
+              <label class="container">
+                Picked for you (default)
+                <input type="checkbox" checked="checked" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">
+                Most popular
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">
+                Rating
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">
+                Delivery time
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+            </section>
+            <section class="sort-section">
+              <!-- services section: fiter checkbox to select dietary preferences -->
+              <h3>Dietary</h3>
+              <label class="container">
+                Vegetarian
+                <input type="checkbox" checked="checked" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">
+                Vegan
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">
+                Gluten-free
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">
+                Halal
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+            </section>
+
+            <section class="sort-section">
+              <h3>Price Range</h3>
+              <!-- services section: fiter checkbox to select price range -->
+              <button class="btn"><a href="#">$</a></button>
+              <button class="btn"><a href="#">$$</a></button>
+              <button class="btn"><a href="#">$$$</a></button>
+            </section>
+          </section>
+        </section>
+      </section>
+
+      <!-- Listed all the products based on the filter -->
+      <section id="products-widget">
+        <section id="myModal" class="modal">
+          <section id="modal-content">
+            <p>
+              This item selected is customizable. Select any of the the below
+              items to proceed to checkout.
+            </p>
+            <section>
+              <label class="container"
+                >Spicy <input type="checkbox" checked="checked" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                >Medium<input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                >Hyderbadi<input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                >Thalasseri<input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+            </section>
+            <a class="popup-btn" href="./../product/product.html"
+              >Add to Cart</a
+            >
+          </section>
+        </section>
+      </section>
+
+      <!-- Pagination added to the products page: if there is more products in the page -->
+      <section class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a class="active" href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+      </section>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="social">
+      <section class="main-menus">
+        <section>
+          <a href="./../../index.html#home">HOME</a>
+        </section>
+        <section>
+          <a href="./../../index.html#services-section">OUR SERVICES</a>
+        </section>
+        <section>
+          <a href="./../../index.html#categories-section">CATEGORIES</a>
+        </section>
+        <section>
+          <a href="./../about-app/about-app.html#about">ABOUT US</a>
+        </section>
+        <section>
+          <a href="./../about-app/about-app.html#contact">CONTACT US</a>
+        </section>
+      </section>
+
+      <section>
+        <h3>Join Us</h3>
+        <section>
+          <a href="#">Add your Meal Service</a>
+        </section>
+        <section>
+          <a href="#"> Sign up to deliver</a>
+        </section>
+        <section class="download-buttons">
+          <section>
+            <a href="https://play.google.com/store/apps" target="_blank"
+              ><img
+                class="download-img"
+                src="./../../images/download-icons/google-play.png"
+            /></a>
+          </section>
+          <section>
+            <a href="https://www.apple.com/ca/store" target="_blank"
+              ><img
+                class="download-img"
+                src="./../../images/download-icons/app-store.png"
+            /></a>
+          </section>
+        </section>
+      </section>
+      <section>
+        <h3>Top kitchen near you</h3>
+        <section>
+          <nav>
+            <ul>
+              <li>Waterloo</li>
+              <li>Kitchener</li>
+              <li>Cambridge</li>
+              <li>Guelph</li>
+            </ul>
+          </nav>
+        </section>
+      </section>
+      <section class="social-icons-container">
+        <a href="https://www.facebook.com" target="_blank"
+          ><img
+            class="social-icons"
+            src="./../../images/social-icons/facebook.png"
+        /></a>
+
+        <a href="https://www.instagram.com" class="instagram" target="_blank"
+          ><img
+            class="social-icons"
+            src="./../../images/social-icons/instagram.png"
+        /></a>
+
+        <a href="https://www.twitter.com" class="twitter" target="_blank"
+          ><img
+            class="social-icons"
+            src="./../../images/social-icons/twitter.png"
+        /></a>
+
+        <p>Copyright © 2022 Soulfood. All rights reserved.</p>
+      </section>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,189 @@
+/* File: about-app.css
+Created by: Elizabeth Thomas
+Created on: 20-06-2022
+Purpose: Styling Web Assignment : Web and Digital Prototyping */
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Added font family in the body section which is imported in HTML */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #ebeaea;
+}
+
+.about-img img {
+  width: 100%;
+}
+
+#about {
+  text-align: center;
+  margin: 0 30px;
+  margin-top: 80px;
+}
+
+#about p {
+  margin-top: 40px;
+  text-align: justify;
+  line-height: 30px;
+}
+
+/* example for pseudo element */
+#about p::selection {
+  color: rgb(255, 44, 24);
+  background: rgb(240, 240, 12);
+}
+
+#contact {
+  margin: 0 30px;
+  margin-top: 60px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.form-style {
+  margin: 10px auto;
+  padding: 20px 12px 10px 20px;
+  padding: 20px;
+
+}
+
+.image-form-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-color: #fcbba2;
+}
+
+.form-style td {
+  padding: 0;
+  display: block;
+  list-style: none;
+  margin: 20px 0 0 0;
+}
+
+.form-style label {
+  margin: 0 0 3px 0;
+  padding: 0px;
+  display: block;
+  font-weight: bold;
+}
+
+.form-style .required {
+  color: red;
+}
+.form-style input[type='submit'],
+.form-style input[type='reset'] {
+  border: 2px solid #ff640d;
+  background-color: transparent;
+  padding: 5px 23px;
+  font-size: 1.25em;
+  border-radius: 50px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.form-style input[type='submit']:hover,
+.form-style input[type='reset']:hover {
+  background: #ff640d;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.form-style .field-textarea {
+  height: 100px;
+}
+.form-style input[type='text'],
+.form-style input[type='email'],
+textarea {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border: 1px solid #ff640d;
+  padding: 7px;
+  margin: 0px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  outline: none;
+}
+.form-style .long {
+  width: 100%;
+}
+.form-style input[type='text']:focus,
+.form-style input[type='email']:focus,
+.form-style textarea:focus {
+  -moz-box-shadow: 0 0 8px #f89156;
+  -webkit-box-shadow: 0 0 8px #f89156;
+  box-shadow: 0 0 8px #f89156;
+  border: 1px solid #f89156;
+}
+.error {
+  color: #d8000c;
+  background-color: #ffbaba;
+}
+
+/*................................ footer section................... */
+#social {
+  background-color: #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 30px;
+  color: #ffffff;
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 0.75em;
+  flex-wrap: wrap;
+}
+
+.main-menus {
+  margin-right: 12px;
+}
+
+#social a {
+  color: #ffffff;
+}
+
+.social-icons-container {
+  width: 30%;
+  text-align: center;
+}
+
+#social-heading {
+  padding-top: 8px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.social-icons {
+  margin: 10px;
+}
+
+.download-buttons {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.download-buttons img {
+  cursor: pointer;
+  border: 2px solid #ffffff;
+  border-radius: 50px;
+  margin: 2px;
+}

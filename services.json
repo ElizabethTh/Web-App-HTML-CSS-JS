@@ -1,0 +1,17 @@
+{
+    "services":[
+       {
+          "title":"Instant Delivery",
+          "image":"images/services/instant.png"
+       },
+       {
+          "title":"Weekly Delivery",
+          "image":"images/services/weekly.png"
+       },
+       {
+          "title":"Monthly Delivery",
+          "image":"images/services/monthly.png"
+       }
+    ]
+ }
+

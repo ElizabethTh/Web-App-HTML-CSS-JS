@@ -1,0 +1,114 @@
+/* File: product-signup.css
+Created by: Elizabeth Thomas
+Created on: 21-06-2022
+Purpose: Styling Web Assignment : Web and Digital Prototyping */
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Added font family in the body section which is imported in HTML */
+body {
+  margin: 0px;
+  font-family: 'Montserrat', sans-serif;
+  background-image: url('./../../images/background/signup-signin.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.popup {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  border: 2px solid #F16028;
+}
+
+.popup button {
+  display: block;
+  margin: 0 0 20px auto;
+  background-color: transparent;
+  font-size: 1em;
+  color: #ffffff;
+  background: #F16028;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+
+/* Common for all the buttons on the screen*/
+.btn {
+  border: 2px solid #FF640D;
+  background-color: transparent;
+  padding: 5px 23px;
+  font-size: 1.2500em;
+  border-radius: 50px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #000000;
+  margin-left: 5px;
+}
+
+#user-details {
+  margin: 0 30px;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.form-head {
+  margin-top: 50px;
+  font-size: 1em;
+}
+
+.email-password-sub {
+  width: 100%;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Bottom margin */
+  resize: vertical
+    /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+a {
+  display: block;
+  width: 150px;
+  position: relative;
+  margin: 20px auto;
+  text-align: center;
+  background-color: #F16028;
+  border-radius: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 0;
+}

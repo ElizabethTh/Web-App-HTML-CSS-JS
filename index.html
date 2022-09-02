@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta name="keywords" content="homemade food, Food delivery app, freshly homemade food">
+  <meta name="description" content="Fresh Homely Food With Love And Care">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/soulfood-icon.png">
+  <title>SoulFood</title>
+  <script src="index.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+ </head>
+
+ <body>
+  <!--  header section with login options  -->
+  <section class="logo-menus-container">
+    <section>
+      <a href="#main-page-content">HOME</a>
+    </section>
+    <section>
+      <img src="images/soulfood-logo.png">
+    </section>
+    <section class="cart-icon">
+      <img src="images/icons/shopping-cart.png">
+      <a href="#">(0)</a>
+    </section>
+  </section>
+  <section id="main-page-content">
+    <button class="btn">
+      <a href="src/product-signin/product-signin.html">SignIn</a>
+    </button>
+    <button class="btn">
+      <a href="src/product-signup/product-signup.html">SignUp</a>
+    </button>
+  </section>
+
+  <!--  slogan and order button area  -->
+  <section class="slogan-search-section">
+    <h1>
+      FRESH HOMEMADE FOOD WITH <br> LOVE AND CARE
+    </h1>
+    <section class="search-bar">
+      <input class="search-input" type="text" placeholder="Search food in your location">
+      <button class="btn"></i><a href="src/product/product.html">Order Now</a></button>
+    </section>
+  </section>
+
+  <!-- categories section: widgets showing different categories of food. -->
+  <section id="categories-section">
+    <h2>CATEGORIES</h2>
+    <!-- TODO: This data will take from a json file and use loop here -->
+    <ul class="categories-widget">
+      <li>
+        <img src="images/categories/north-indian.jpg"
+          onclick="document.location='src/product/product.html';return false;" alt="category image">
+        <h3>North Indian Meal</h3>
+      </li>
+      <li>
+        <img src="images/categories/south-indian.jpg"
+          onclick="document.location='src/product/product.html';return false;" alt="category image">
+        <h3>South Indian Meal</h3>
+      </li>
+      <li>
+        <img src="images/categories/spanish.jpg" onclick="document.location='src/product/product.html';return false;"
+          alt="category image">
+        <h3>Spanish Food</h3>
+      </li>
+      <li>
+        <img src="images/categories/italian.jpg" onclick="document.location='src/product/product.html';return false;"
+          alt="category image">
+        <h3>Italian Meal</h3>
+      </li>
+    </ul>
+    <ul class="categories-widget">
+      <li>
+        <img src="images/categories/japanese.jpg" onclick="document.location='src/product/product.html';return false;"
+          alt="category image">
+        <h3>Japanese</h3>
+      </li>
+      <li>
+        <img src="images/categories/korean.jpg" onclick="document.location='src/product/product.html';return false;"
+          alt="category image">
+        <h3>Korean Food</h3>
+      </li>
+      <li>
+        <img src="images/categories/nigerian.jpg" onclick="document.location='src/product/product.html';return false;"
+          alt="category image">
+        <h3>Nigerian Food</h3>
+      </li>
+      <li>
+        <img src="images/categories/arabic.jpg" onclick="document.location='src/product/product.html';return false;"
+          alt="category image">
+        <h3>Arabic Food</h3>
+      </li>
+    </ul>
+    <button class="btn"> <a href="#">See all other categories</a></button>
+  </section>
+
+  <!-- Our Services: describes our main 3 services. -->
+  <section id="services-section">
+    <h2> OUR SERVICES </h2>
+    <section id="service-widget">
+    </section>
+  </section>
+
+  <!-- Footer Section -->
+  <footer id="social">
+    <section class="main-menus">
+      <section>
+        <a href="#main-page-content">HOME</a>
+      </section>
+      <section>
+        <a href="#services-section">OUR SERVICES</a>
+      </section>
+      <section>
+        <a href="#categories-section">CATEGORIES</a>
+      </section>
+      <section>
+        <a href="src/about-app/about-app.html">ABOUT US</a>
+      </section>
+      <section>
+        <a href="src/about-app/about-app.html#contact">CONTACT US</a>
+      </section>
+    </section>
+    <section>
+      <h3> Join Us </h3>
+      <section>
+        <a href="#">Add your Meal Service</a>
+      </section>
+      <section>
+        <a href="#"> Sign up to deliver</a>
+      </section>
+      <section class="download-buttons">
+        <section>
+          <a href="https://play.google.com/store/apps" target="_blank"><img
+              src="images/download-icons/google-play.png"></a>
+        </section>
+        <section>
+          <a href="https://www.apple.com/ca/store" target="_blank"><img src="images/download-icons/app-store.png"></a>
+        </section>
+      </section>
+    </section>
+    <section>
+      <h3> Top kitchen near you </h3>
+      <section>
+        <nav>
+          <ul>
+            <li>Waterloo</li>
+            <li> Kitchener</li>
+            <li> Cambridge </li>
+            <li> Guelph </li>
+          </ul>
+        </nav>
+      </section>
+    </section>
+    <section class="social-icons-container">
+      <a href="https://www.facebook.com" target="_blank"><img class="social-icons"
+          src="images/social-icons/facebook.png"></a>
+      <a href="https://www.instagram.com" class="instagram" target="_blank"><img class="social-icons"
+          src="images/social-icons/instagram.png"></a>
+      <a href="https://www.twitter.com" class="twitter" target="_blank"><img class="social-icons"
+          src="images/social-icons/twitter.png"></a>
+      <p> Copyright © 2022 Soulfood. All rights reserved. </p>
+    </section>
+  </footer>
+ </body>
+
+</html>

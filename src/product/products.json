@@ -1,0 +1,136 @@
+{
+    "north-indian-meal":[
+       {
+          "title":"Biriyani",
+          "rating":"4.7",
+          "product1":"biriyani",
+          "price":"$20",
+          "img":"./../../images/products/biriyani.jpg",
+          "time": "20-30min",
+          "services":[
+             "instant",
+             "weekly"
+          ],
+          "picked":[
+             "popular",
+             "rating"
+          ],
+          "dietary":[
+             "non-vegetarian"
+          ],
+          "price-range":[
+             "$$"
+          ]
+       },
+       {
+          "title":"Rice Meal",
+          "rating":"4.7",
+          "product1":"rice meal",
+          "price":"$10",
+          "time": "10-30min",
+          "img":"./../../images/products/rice-meal.jpg",
+          "services":[
+             "instant",
+             "weekly"
+          ],
+          "picked":[
+             "popular",
+             "rating"
+          ],
+          "dietary":[
+             "vegetarian"
+          ],
+          "price-range":[
+             "$$"
+          ]
+       },
+       {
+          "title":"Chappathi Combo",
+          "rating":"4.6",
+          "product2":"chappathi combo",
+          "img":"./../../images/products/chapathi.jpg",
+          "price":"$25",
+          "time": "05-10min",
+          "services":[
+             "instant",
+             "monthly"
+          ],
+          "picked":[
+             "popular",
+             "delivery"
+          ],
+          "dietary":[
+             "vegetarian"
+          ],
+          "price-range":[
+             "$$"
+          ]
+       },
+       {
+         "title":"Porotta Chicken",
+         "rating":"4.5",
+         "product1":"porotta-chicken",
+         "img":"./../../images/products/porotta.jpg",
+         "price":"$15",
+         "time": "10-35min",
+         "services":[
+            "instant",
+            "weekly"
+         ],
+         "picked":[
+            "popular",
+            "rating"
+         ],
+         "dietary":[
+            "non-vegetarian"
+         ],
+         "price-range":[
+            "$"
+         ]
+      }
+    ],
+    "south-indian-meal":[
+       {
+          "title":"Porotta Chicken",
+          "rating":"3.5",
+          "product1":"porotta-chicken",
+          "img":"./../../images/products/porotta.jpg",
+          "price":"30$",
+          "time": "10-35min",
+          "services":[
+             "instant",
+             "weekly"
+          ],
+          "picked":[
+             "popular",
+             "rating"
+          ],
+          "dietary":[
+             "non-vegetarian"
+          ],
+          "price-range":[
+             "$"
+          ]
+       },
+       {
+          "title":"Idily Vada Combo",
+          "rating":"4.3",
+          "product2":"idily vada combo",
+          "price":"20$",
+          "services":[
+             "instant",
+             "monthly"
+          ],
+          "picked":[
+             "popular",
+             "delivery"
+          ],
+          "dietary":[
+             "vegetarian"
+          ],
+          "price-range":[
+             "$$$"
+          ]
+       }
+    ]
+ }

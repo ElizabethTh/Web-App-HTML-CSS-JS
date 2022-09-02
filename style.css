@@ -1,0 +1,254 @@
+/* File: style.css
+Created by: Group1
+Created on: 20-06-2022
+Purpose: Styling Web Assignment : Web and Digital Prototyping */
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Added font family in the body section which is imported in HTML */
+body {
+  margin: 0px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #ebeaea;
+}
+
+/*................................ header login options section................... */
+#main-page-content {
+  text-align: center;
+}
+
+.logo-menus-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 8px;
+}
+
+.logo-menus-container a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.logo-menus-container a:hover {
+  border-bottom: 2px solid #FF0303;
+}
+
+.cart-icon img:hover {
+  cursor: pointer;
+}
+
+.cart-icon img:hover {
+  filter: opacity(0.4) drop-shadow(0 0 0 #FF0303);
+}
+
+.slogan-search-section {
+  background-color: #FF0303;
+  padding: 60px;
+  margin-top: 40px;
+  background-image: url('./images/background/home-page.jpg');
+}
+
+/* Common for all the buttons on the screen*/
+.btn {
+  border: 2px solid #FF640D;
+  background-color: transparent;
+  padding: 5px 23px;
+  font-size: 1.2500em;
+  border-radius: 50px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #000000;
+  margin-left: 5px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: #FF640D;
+  border: 2px solid #FF640D;
+}
+
+.btn:hover a{
+  color: #ffffff;
+}
+
+.slogan-search-section .btn a {
+  color: #ffffff;
+}
+
+/*................................ slogan and search bar section section................... */
+
+.slogan-search-section h1 {
+  text-align: center;
+  line-height: 2;
+  color: #ffffff;
+}
+
+.search-bar {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.search-input {
+  width: 50%;
+  padding: 12px 24px;
+  background-color: transparent;
+  font-size: 0.8750em;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  background-position: 95% center;
+  border-radius: 50px;
+  border: 1px solid #ffffff;
+  transition: all 250ms ease-in-out;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.search-input:hover,
+.search-input:focus {
+  padding: 12px 0;
+  outline: 0;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #575756;
+  border-radius: 0;
+  background-position: 100% center;
+}
+
+/*................................ categories  section................... */
+
+#categories-section {
+  text-align: center;
+}
+
+#categories-section h2 {
+  margin: 80px 0;
+}
+
+.categories-widget {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 30px;
+  flex: 2;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.categories-widget img {
+  cursor: pointer;
+  border-radius: 50px;
+  border: 1px solid #000000;
+}
+
+.categories-widget img:hover {
+  transform: scale(1.2);
+}
+
+.categories-widget li {
+  list-style: none
+}
+
+/*................................ services section................... */
+
+#services-section {
+  text-align: center;
+}
+
+#services-section h2 {
+  margin: 80px 0;
+}
+
+#service-widget {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 30px;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+#service-widget section {
+  margin-top: 30px;
+  align-items: center;
+}
+
+#service-widget img {
+  cursor: pointer;
+  border: 3px solid #FF640D;
+  padding: 10px;
+}
+
+/*................................ footer section................... */
+#social {
+  background-color: #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 30px;
+  color: #ffffff;
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 0.7500em;
+  flex-wrap: wrap;
+}
+
+.main-menus {
+  margin-right: 12px;
+}
+
+#social a {
+  color: #ffffff;
+}
+
+.social-icons-container {
+  width: 30%;
+  text-align: center;
+}
+
+#social-heading {
+  padding-top: 8px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.social-icons {
+  margin: 10px;
+}
+
+.download-buttons {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.download-buttons img {
+  cursor: pointer;
+  border: 2px solid #ffffff;
+  border-radius: 50px;
+  margin: 2px;
+}
